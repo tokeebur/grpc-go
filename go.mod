@@ -28,3 +28,5 @@ require (
 // NOTE: bumped min version to go 1.22 - tested locally, no issues found
 // TODO: look into replacing github.com/golang/protobuf with google.golang.org/protobuf directly
 //       golang/protobuf is a wrapper shim now, direct dep seems unnecessary
+// NOTE: golang.org/x/xerrors is also largely obsolete since errors pkg improvements in go 1.13+
+//       keeping for now since it's indirect, but worth flagging if upsteam ever drops it
