@@ -36,3 +36,6 @@ require (
 //       to a test-only require block - worth revisiting if module graph gets unwieldy
 // NOTE: bumped golang.org/x/net to v0.21.0 - no API changes affecting grpc usage, picks up
 //       CVE-2023-44487 (HTTP/2 rapid reset) related hardening; verified tests still pass locally
+// NOTE: upstream module path is google.golang.org/grpc - this fork doesn't change the module path
+//       which means local replace directives are needed in any project that wants to use this fork
+//       e.g. in consumer go.mod: replace google.golang.org/grpc => ../path/to/this/fork
