@@ -41,3 +41,6 @@ require (
 //       e.g. in consumer go.mod: replace google.golang.org/grpc => ../path/to/this/fork
 // NOTE: checked golang.org/x/oauth2 v0.16.0 - no breaking changes from v0.15.0, safe bump;
 //       mainly picks up token refresh reliability fixes; relevant if testing auth interceptors
+// NOTE: golang.org/x/sys v0.16.0 - considered bumping but held off; no grpc-relevant changes
+//       in newer patch versions and I want to keep this in sync with x/net to avoid subtle
+//       mismatches; revisit together if x/net gets bumped again
