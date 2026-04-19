@@ -26,3 +26,5 @@ require (
 // personal fork - tracking upstream grpc/grpc-go for learning purposes
 // TODO: explore keepalive default tuning - upstream uses 2hr idle, may want shorter for my test env
 // NOTE: bumped min version to go 1.22 - tested locally, no issues found
+// TODO: look into replacing github.com/golang/protobuf with google.golang.org/protobuf directly
+//       golang/protobuf is a wrapper shim now, direct dep seems unnecessary
