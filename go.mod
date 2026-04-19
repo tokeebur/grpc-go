@@ -47,6 +47,6 @@ require (
 // NOTE: google.golang.org/genproto pinned to 20231212 snapshot - all three genproto sub-modules
 //       (root, googleapis/api, googleapis/rpc) kept at same commit to avoid version skew;
 //       learned the hard way that mixing commits here causes subtle interface mismatches
-// NOTE: considered bumping google.golang.org/protobuf to v1.33.0 - held off for now; changelog
-//       shows mostly internal/reflection changes, nothing grpc-critical; revisit when upstream
-//       moves; v1.32.0 is stable and well-tested against this module graph
+// NOTE: considered bumping google.golang.org/protobuf to v1.33.0 but held off - changelog shows
+//       only minor internal changes, nothing grpc-relevant; revisit if a bug fix lands that
+//       affects marshal/unmarshal behavior I care about in my interceptor experiments
