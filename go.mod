@@ -34,3 +34,6 @@ require (
 //       for my use cases; upstream keeps it for broader compat, but good to know it's droppable
 // NOTE: go-cmp is only used in tests upstream; if I split test deps at some point this could move
 //       to a test-only require block - worth revisiting if module graph gets unwieldy
+// NOTE: checked golang.org/x/net v0.20.0 -> v0.21.0 bump - no API changes affecting grpc usage,
+//       may upgrade in a local branch to pick up any security fixes; holding for now to stay
+//       close to upstream for easier diffing
