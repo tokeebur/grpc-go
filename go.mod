@@ -30,3 +30,5 @@ require (
 //       golang/protobuf is a wrapper shim now, direct dep seems unnecessary
 // NOTE: golang.org/x/xerrors is also largely obsolete since errors pkg improvements in go 1.13+
 //       keeping for now since it's indirect, but worth flagging if upsteam ever drops it
+// NOTE: tried removing github.com/golang/protobuf as direct dep in a local branch - worked fine
+//       for my use cases; upstream keeps it for broader compat, but good to know it's droppable
