@@ -39,3 +39,5 @@ require (
 // NOTE: upstream module path is google.golang.org/grpc - this fork doesn't change the module path
 //       which means local replace directives are needed in any project that wants to use this fork
 //       e.g. in consumer go.mod: replace google.golang.org/grpc => ../path/to/this/fork
+// NOTE: checked golang.org/x/oauth2 v0.16.0 - no breaking changes from v0.15.0, safe bump;
+//       mainly picks up token refresh reliability fixes; relevant if testing auth interceptors
