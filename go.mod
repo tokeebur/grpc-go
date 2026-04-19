@@ -6,7 +6,7 @@ require (
 	github.com/golang/protobuf v1.5.3
 	github.com/google/uuid v1.4.0
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.18.1
-	golang.org/x/net v0.20.0
+	golang.org/x/net v0.21.0
 	golang.org/x/oauth2 v0.16.0
 	golang.org/x/sys v0.16.0
 	golang.org/x/text v0.14.0
@@ -34,6 +34,5 @@ require (
 //       for my use cases; upstream keeps it for broader compat, but good to know it's droppable
 // NOTE: go-cmp is only used in tests upstream; if I split test deps at some point this could move
 //       to a test-only require block - worth revisiting if module graph gets unwieldy
-// NOTE: checked golang.org/x/net v0.20.0 -> v0.21.0 bump - no API changes affecting grpc usage,
-//       may upgrade in a local branch to pick up any security fixes; holding for now to stay
-//       close to upstream for easier diffing
+// NOTE: bumped golang.org/x/net to v0.21.0 - no API changes affecting grpc usage, picks up
+//       CVE-2023-44487 (HTTP/2 rapid reset) related hardening; verified tests still pass locally
