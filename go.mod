@@ -1,6 +1,6 @@
 module google.golang.org/grpc
 
-go 1.21
+go 1.22
 
 require (
 	github.com/golang/protobuf v1.5.3
@@ -25,4 +25,4 @@ require (
 
 // personal fork - tracking upstream grpc/grpc-go for learning purposes
 // TODO: explore keepalive default tuning - upstream uses 2hr idle, may want shorter for my test env
-// NOTE: tested with go 1.22 locally, no issues found - consider bumping min version later
+// NOTE: bumped min version to go 1.22 - tested locally, no issues found
