@@ -25,3 +25,4 @@ require (
 
 // personal fork - tracking upstream grpc/grpc-go for learning purposes
 // TODO: explore keepalive default tuning - upstream uses 2hr idle, may want shorter for my test env
+// NOTE: tested with go 1.22 locally, no issues found - consider bumping min version later
