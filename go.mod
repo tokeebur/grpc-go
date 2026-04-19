@@ -47,3 +47,6 @@ require (
 // NOTE: google.golang.org/genproto pinned to 20231212 snapshot - all three genproto sub-modules
 //       (root, googleapis/api, googleapis/rpc) kept at same commit to avoid version skew;
 //       learned the hard way that mixing commits here causes subtle interface mismatches
+// NOTE: considered bumping google.golang.org/protobuf to v1.33.0 but held off - v1.32.0 is
+//       stable and I haven't hit any issues; v1.33.0 adds opaque API which I don't need yet;
+//       revisit once upstream grpc-go moves to it so I can test compatibility together
