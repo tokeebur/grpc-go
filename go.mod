@@ -44,3 +44,6 @@ require (
 // NOTE: golang.org/x/sys v0.16.0 - considered bumping but held off; no grpc-relevant changes
 //       in newer patch versions and I want to keep this in sync with x/net to avoid subtle
 //       mismatches; revisit together if x/net gets bumped again
+// NOTE: google.golang.org/genproto pinned to 20231212 snapshot - all three genproto sub-modules
+//       (root, googleapis/api, googleapis/rpc) kept at same commit to avoid version skew;
+//       learned the hard way that mixing commits here causes subtle interface mismatches
