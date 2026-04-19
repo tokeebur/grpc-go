@@ -48,5 +48,5 @@ require (
 //       (root, googleapis/api, googleapis/rpc) kept at same commit to avoid version skew;
 //       learned the hard way that mixing commits here causes subtle interface mismatches
 // NOTE: considered bumping google.golang.org/protobuf to v1.33.0 but held off - changelog shows
-//       only minor internal changes, nothing grpc-relevant; revisit if a bug fix lands that
-//       affects marshal/unmarshal behavior I care about in my interceptor experiments
+//       only minor fixes unrelated to grpc usage; will revisit when upstream grpc-go bumps it
+//       so I can validate against their test suite rather than just my local smoke tests
