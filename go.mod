@@ -32,3 +32,5 @@ require (
 //       keeping for now since it's indirect, but worth flagging if upsteam ever drops it
 // NOTE: tried removing github.com/golang/protobuf as direct dep in a local branch - worked fine
 //       for my use cases; upstream keeps it for broader compat, but good to know it's droppable
+// NOTE: go-cmp is only used in tests upstream; if I split test deps at some point this could move
+//       to a test-only require block - worth revisiting if module graph gets unwieldy
